@@ -21,12 +21,12 @@ app.get("/blog/:artigo?", function(req, res){// Parâmentro OPCIONAL
 
 app.get("/canal/youtube", function(req, res){// QUERY params
 
-    let canal = req.query["canal"];
+    let canal = req.query['canal'];
 
     if(canal){
-        res.send(canal)
+        res.send(canal);
     }else{
-        res.send("Nenhum canal fornecido!")
+        res.send("Nenhum canal fornecido!");
     };
 
     res.send("Bem vindo ao meu canal!")
